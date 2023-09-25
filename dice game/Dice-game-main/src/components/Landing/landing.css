@@ -1,0 +1,51 @@
+body {
+    background: #11998e;
+    overflow: hidden;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+#land{
+    background-image: url("./background.jpg");
+    background-size: cover;
+
+}
+
+#play{
+    animation-duration: 1s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#player1{
+
+    animation-duration: 1s;
+    animation-name: moveDown;
+}
+
+#player2{
+
+    animation-duration: 1s;
+    animation-name: moveDown;
+}
+
+@keyframes bounce{
+    from { transform: translate3d(0, 0, 0);}
+    to { transform: translate3d(0, 20px, 0);}
+}
+
+@keyframes moveDown {
+    from {
+      transform: translateY(-150px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+
